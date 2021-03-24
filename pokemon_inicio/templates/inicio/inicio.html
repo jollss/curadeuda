@@ -1,0 +1,11 @@
+asdas
+{{nombre}}
+
+
+<form action="{% url 'index' %}" method="post">
+   {% csrf_token %}
+
+   <input type="text" name="p" value="1">
+   <input type="submit" value="Enviar formulario" />
+</form>
+<a href="{% url 'logout' %}">cerrar </a>
